@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS For Slight Changes -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CSS FOR DOTS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+    <!--  -->
+    <div class="dots-container main-header" style="width:60px">
+
+        <div class="dotstyle dotstyle-scaleup nav-dots">
+
+            <ul>
+
+                <li><a href="#anchor1"></a></li>
+                <li><a href="#anchor2"></a></li>
+                <li><a href="#anchor3"></a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div>
+
+
+        <div id="anchor1" class="section">
+
+
+            <div class="content-1">
+
+                <img src="image1.jpg" width="700" height="700">
+
+                <div class="content-1-text">
+
+                    <h1>A CUP OF MATCHA</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde beatae tenetur praesentium eos
+                        enim labore
+                        voluptate culpa suscipit dolores consectetur reiciendis, facere perspiciatis rerum quibusdam
+                        hic! Nemo vitae blanditiis quis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, incidunt veritatis. Ullam,
+                        necessitatibus? Repudiandae ducimus exercitationem dignissimos eos iure omnis quisquam
+                        voluptatibus cum architecto odio, cumque molestiae velit, reiciendis officiis?</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div id="anchor2" class="section" style="background-color: green">
+
+
+
+        </div>
+
+        <div id="anchor3" class="section footer">
+
+            <div class="footer-content">
+
+                <h1>WANT TO LEARN MORE ?</h1>
+                <p>Subscribe to our weekly email <br>
+                    to learn about other super foods</p>
+
+                <input type="email">
+
+            </div>
+
+            <div class="black-foot">
+
+                <div class="footer-links">
+
+                    <div>
+
+                        <h1>OTHER SUPER FOODS</h1>
+                        <ul>
+
+                            <li>Kale</li>
+                            <li>Avacado</li>
+                            <li>Goji Berries</li>
+                            <li>Coconut</li>
+                            <li>Blueberries</li>
+                            <li>Wheatgrass</li>
+                            <li>Cinamon</li>
+                            <li>Raw Milk</li>
+                            <li>Almonds</li>
+                            <li>Flaxseeds</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Scroll Down Page Effects  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // To initialize Scroll Animations
+        AOS.init();
+    </script>
+
+    <!-- SCript For Dots -->
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/dots.js"></script>
+    <script>
+        [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function (nav) {
+            new DotNav(nav, {
+                callback: function (idx) {
+                    //console.log( idx )
+                }
+            });
+        });
+    </script>
+
+    <!-- Scroll When User Clicks Page Link Effect -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+</body>
+
+</html>
