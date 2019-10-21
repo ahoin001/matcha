@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- CSS For Slight Changes -->
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS For My Changes -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav-style.css">
 
@@ -15,37 +18,36 @@
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
 
+    <!-- CSS FOR SCROLL EFFECTS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <title>Document</title>
 
 </head>
 
-<body>
+<body class="animated fadeIn slower">
 
     <!-- NAVBAR -->
 
-    <nav>
+    <nav class="navbar">
 
-        <nav class="navbar">
+        <a href="https://freecodecamp.org" class="logo">
 
-            <a href="https://freecodecamp.org" class="logo">
+            <!-- <img src="./logo.png" width="30" height="80"> -->
+            <p>Super Matcha</p>
 
-                <!-- <img src="./logo.png" width="30" height="80"> -->
-                <p>Super Matcha</p>
+        </a>
 
-            </a>
-
-            <ul class="nav-links">
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Benefits</a></li>
-                <li class="nav-item"><a href="#">Product</a></li>
-            </ul>
-
-        </nav>
-
+        <ul class="nav-links">
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Benefits</a></li>
+            <li class="nav-item"><a href="#">Product</a></li>
+        </ul>
 
     </nav>
 
-    <!-- Section 1 -->
+    <!-- NAV DOTS -->
     <div class="dots-container main-header" style="width:60px">
 
         <div class="dotstyle dotstyle-scaleup nav-dots">
@@ -62,19 +64,20 @@
 
     </div>
 
-    <div>
+    <!-- CONTAINER -->
+    <div class="container">
 
-
+        <!-- Section 1 -->
         <div id="anchor1" class="section">
-
 
             <div class="content-1">
 
-                <img src="image1.jpg" width="700" height="700">
+                <img src="img/image1.jpg" width="700" height="700">
 
                 <div class="content-1-text">
 
-                    <h1>A CUP OF MATCHA</h1>
+                    <h1>A CUP OF MATCHA ?</h1>
+
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde beatae tenetur praesentium eos
                         enim labore
                         voluptate culpa suscipit dolores consectetur reiciendis, facere perspiciatis rerum quibusdam
@@ -89,13 +92,69 @@
 
         </div>
 
-        <div id="anchor2" class="section" style="background-color: green">
+        <!-- Section 2 -->
+        <div id="anchor2" class="section benefits" data-aos="fade">
+
+            <div id="benefits-grid">
+
+                <div class="benefits-row">
+
+                    <div class="benefit-images">
+
+                        <img src="img/growth.svg" class="grid-image">
+                        <h1>RICH IN FIBER</h1>
+
+                    </div>
+
+                    <div class="benefit-images">
+
+                        <img src="img/muscle.svg" class="grid-image">
+                        <h1>STRENGTHENS</h1>
+
+                    </div>
+
+                    <div class="benefit-images">
+
+                        <img src="img/stomach.svg" class="grid-image">
+                        <h1>AIDS DIGESTION</h1>
+
+                    </div>
 
 
+                </div>
+
+                <div class="benefits-row">
+
+                    <div class="benefit-images">
+
+                        <img src="img/mindset.svg" class="grid-image">
+                        <h1>IMPROVES BRAIN FUNCTION</h1>
+
+                    </div>
+
+                    <div class="benefit-images">
+
+                        <img src="img/smile.svg" class="grid-image">
+                        <h1>IMPROVES MOOD</h1>
+
+                    </div>
+
+                    <div class="benefit-images">
+
+                        <img src="img/sea.svg" class="grid-image">
+                        <h1>DETOXIFIES</h1>
+
+                    </div>
+
+
+                </div>
+
+            </div>
 
         </div>
 
-        <div id="anchor3" class="section footer">
+        <!-- Section 3 -->
+        <div id="anchor3" class="section footer" data-aos="fade">
 
             <div class="footer-content">
 
@@ -107,45 +166,47 @@
 
             </div>
 
-            <div class="black-foot">
+        </div>
 
-                <div class="footer-links">
+        <!-- <div class="black-foot">
 
-                    <div>
+            <div class="footer-links">
 
-                        <h1>OTHER SUPER FOODS</h1>
-                        <ul>
+                <div>
 
-                            <li>Kale</li>
-                            <li>Avacado</li>
-                            <li>Goji Berries</li>
-                            <li>Coconut</li>
-                            <li>Blueberries</li>
-                            <li>Wheatgrass</li>
-                            <li>Cinamon</li>
-                            <li>Raw Milk</li>
-                            <li>Almonds</li>
-                            <li>Flaxseeds</li>
+                    <h1>OTHER SUPER FOODS</h1>
+                    <ul>
 
-                        </ul>
+                        <li>Kale</li>
+                        <li>Avacado</li>
+                        <li>Goji Berries</li>
+                        <li>Coconut</li>
+                        <li>Blueberries</li>
+                        <li>Wheatgrass</li>
+                        <li>Cinamon</li>
+                        <li>Raw Milk</li>
+                        <li>Almonds</li>
+                        <li>Flaxseeds</li>
 
-                    </div>
+                    </ul>
 
                 </div>
 
             </div>
 
-
-
-        </div>
+        </div> -->
 
     </div>
 
     <!-- Scroll Down Page Effects  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+
         // To initialize Scroll Animations
-        AOS.init();
+        AOS.init({
+            duration: 1400
+        });
+
     </script>
 
     <!-- SCript For Dots -->
@@ -180,7 +241,7 @@
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 600, function () {
+                    }, 800, function () {
 
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
