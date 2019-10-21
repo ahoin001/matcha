@@ -9,24 +9,24 @@
     <!-- FONTS -->
     <<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 
-    <!-- CSS For My Changes -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/nav-style.css">
+        <!-- CSS For My Changes -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/nav-style.css">
 
 
-    <!-- CSS FOR DOTS -->
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <!-- CSS FOR DOTS -->
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
 
-    <!-- CSS FOR SCROLL EFFECTS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <!-- CSS FOR SCROLL EFFECTS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-    <title>Document</title>
+        <title>Document</title>
 
 </head>
 
-<body class="animated fadeIn slower">
+<body >
 
     <!-- NAVBAR -->
 
@@ -40,9 +40,9 @@
         </a>
 
         <ul class="nav-links">
-            <li class="nav-item"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Benefits</a></li>
-            <li class="nav-item"><a href="#">Product</a></li>
+            <li class="nav-item"><a href="#anchor1">About</a></li>
+            <li class="nav-item"><a href="#anchor2">Benefits</a></li>
+            <li class="nav-item"><a href="#anchor3">Product</a></li>
         </ul>
 
     </nav>
@@ -68,7 +68,7 @@
     <div class="container">
 
         <!-- Section 1 -->
-        <div id="anchor1" class="section">
+        <div id="#anchor1" class="section">
 
             <div class="content-1">
 
@@ -78,11 +78,11 @@
 
                     <h1>A CUP OF MATCHA ?</h1>
 
-                    <p> Matcha or macha is finely ground powder of 
+                    <p> Matcha or macha is finely ground powder of
                         specially grown and processed green tea
-                        leaves. It is special  in two aspects of farming
+                        leaves. It is special in two aspects of farming
                         and processing: the green tea plants for
-                        matcha are shade-grown for the three to four 
+                        matcha are shade-grown for the three to four
                         weeks before harvest, and the stems and
                         veins are removed during processing
                     </p>
@@ -94,7 +94,7 @@
         </div>
 
         <!-- Section 2 -->
-        <div id="anchor2" class="section benefits" data-aos="fade">
+        <div id="#anchor2" class="section benefits" data-aos="fade">
 
             <div id="benefits-grid">
 
@@ -155,7 +155,7 @@
         </div>
 
         <!-- Section 3 -->
-        <div id="anchor3" class="section footer" data-aos="fade">
+        <div id="#anchor3" class="section footer" data-aos="fade">
 
             <div class="footer-content">
 
@@ -201,57 +201,16 @@
 
     <!-- Scroll Down Page Effects  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
 
-        // To initialize Scroll Animations
-        AOS.init({
-            duration: 1400
-        });
-
-    </script>
-
-    <!-- SCript For Dots -->
+    <!-- Script For Nav Dots -->
     <script src="js/modernizr.min.js"></script>
     <script src="js/dots.js"></script>
-    <script>
-        [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function (nav) {
-            new DotNav(nav, {
-                callback: function (idx) {
-                    //console.log( idx )
-                }
-            });
-        });
-    </script>
 
-    <!-- Scroll When User Clicks Page Link Effect -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
-
+    <!-- Import jquery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    
+    <!-- Main js file with logic for above imports -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
