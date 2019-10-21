@@ -3,32 +3,33 @@
 }
 
 .container {
-
   /* 
     Parent container where snap scroll will take place
     for anchor links
    */
-  scroll-snap-type: mandatory;
+  /* scroll-snap-type: y mandatory; */
 
   /* overflow-y: scroll; */
 }
 
 body {
-
-  /* height: 100vh; */
-  /* Hide Scroll Bar */
-  /* overflow: hidden; */
-
+  /* Set Up For Snap Scroll */
+  max-height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(3rem);
+  scroll-snap-type: y mandatory;
 }
 /***************************************************
                       SECTIONS
 ****************************************************/
 
 .section {
-  border: 1px solid black;
-
   /* When anchor link clicked alwyas take user to start of sections */
-  scroll-snap-align: center;
+  scroll-snap-align: start;
+  
+  z-index: -1;
+
+  border: 1px solid black;
 
   width: 100%;
   height: 100vh;
@@ -43,14 +44,14 @@ body {
   justify-content: space-evenly;
   align-items: center;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   width: 80%;
   height: 100%;
 }
 
 .content-1-text {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 
   display: flex;
   flex-direction: column;
@@ -59,7 +60,7 @@ body {
   text-align: center;
   color: darkslategray;
 
-  margin-bottom: 200px;
+  /* margin-bottom: 170px; */
 
   width: 50%;
 }
@@ -69,15 +70,15 @@ body {
   /* Customize what weights we have access too in google fonts link */
   font-weight: 400;
 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .content-1-text p {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   margin-top: 7%;
 
-  width: 90%;
+  width: 85%;
 
   line-height: 40px;
   font-size: 1.6em;
@@ -88,9 +89,7 @@ body {
                       GRID
 ****************************************************/
 .benefits {
-
-  background-color: rgb(203,227,170);
-
+  background-color: rgb(203, 227, 170);
 }
 
 #benefits-grid {
@@ -182,20 +181,6 @@ body {
 .black-foot ul {
   list-style-type: none;
   line-height: 30px;
-}
-
-/***************************************************
-                      Position Nav Dots
-****************************************************/
-
-.dots-container {
-  background-color: grey;
-  opacity: 0.6;
-
-  position: -webkit-sticky;
-  position: sticky;
-  top: 80%;
-  z-index: 1;
 }
 
 /***************************************************
