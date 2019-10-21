@@ -2,16 +2,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-.container {
-  /* 
-    Parent container where snap scroll will take place
-    for anchor links
-   */
-  /* scroll-snap-type: y mandatory; */
-
-  /* overflow-y: scroll; */
-}
-
 body {
   /* Set Up For Snap Scroll */
   max-height: 100vh;
@@ -19,6 +9,15 @@ body {
   scroll-snap-points-y: repeat(3rem);
   scroll-snap-type: y mandatory;
 }
+
+svg {
+  width: 70px;
+  height: 70px;
+}
+svg:hover {
+  fill: red;
+}
+
 /***************************************************
                       SECTIONS
 ****************************************************/
