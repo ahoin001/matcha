@@ -222,15 +222,24 @@ svg:hover {
 
 #number-6{
 
-  border: 1px solid black;
+  border: 3px solid black;
 
   position: absolute;
-  top: 0;
-  left: 0;
+ 
+  /* attempt */
+  /* top: 0;
+  left: 0; */
+
+  /* bootleg fix? */
+  right: 380px;
+  bottom: 35px;
+
 
   opacity: 0.1;
 
-  font-size: 520px;
+  width: 300px;
+
+  font-size: 25em;
   /* font-size: 420px; */
 
 }
@@ -249,7 +258,7 @@ svg:hover {
 
   color: darkslategray;
 
-  margin-bottom: 34px;
+  margin-bottom: 54px;
 }
 
 #learn-more-button {
@@ -266,6 +275,10 @@ svg:hover {
   
   padding: 18px 22px;
   margin-bottom: 50px;
+  
+}
+
+#matcha-6-image {
   
 }
 
