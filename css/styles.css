@@ -19,13 +19,13 @@ svg:hover {
 }
 
 /***************************************************
-                      SECTIONS
+                      SECTION 1
 ****************************************************/
 
 .section {
   /* When anchor link clicked alwyas take user to start of sections */
   scroll-snap-align: start;
-  
+
   z-index: -1;
 
   border: 1px solid black;
@@ -85,7 +85,7 @@ svg:hover {
 }
 
 /***************************************************
-                      GRID
+                      SECTION 2 GRID
 ****************************************************/
 .benefits {
   background-color: rgb(203, 227, 170);
@@ -123,6 +123,11 @@ svg:hover {
   align-items: center;
 
   width: 280px;
+}
+
+.benefit-texts {
+  text-align: center;
+  margin: 28px 0;
 }
 
 .grid-image {
@@ -180,6 +185,88 @@ svg:hover {
 .black-foot ul {
   list-style-type: none;
   line-height: 30px;
+}
+
+/***************************************************
+                      SECTION 4 
+****************************************************/
+
+#left-green-section {
+  border: 3px solid purple;
+
+  width: 71%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-color: rgb(203, 227, 170);
+}
+
+/* TODO MARCOS HELP POSITION */
+#matcha-6-div {
+  border: 1px solid blue;
+
+  display: flex;
+  flex-direction: column;
+
+  /* To position the 6 in background */
+  position: relative;
+
+  margin-right: 50px ;
+
+  width: 65%;
+  /* height: 50%; */
+}
+
+#number-6{
+
+  border: 1px solid black;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0.1;
+
+  font-size: 520px;
+  /* font-size: 420px; */
+
+}
+
+#matcha-6-header {
+  font-size: 5em;
+
+  color: white;
+
+  margin-bottom: 24px;
+}
+
+#matcha-6-text {
+  font-size: 1.2em;
+  line-height: 1.8em;
+
+  color: darkslategray;
+
+  margin-bottom: 34px;
+}
+
+#learn-more-button {
+
+  width: 180px;
+  border-radius: 25px;
+  
+  text-align: center;
+  font-size: 22px;
+
+  background-color: rgb(17, 79, 47);
+  color: #ffffff;
+  text-decoration: none;
+  
+  padding: 18px 22px;
+  margin-bottom: 50px;
+  
 }
 
 /***************************************************
