@@ -28,7 +28,7 @@ svg:hover {
 
   z-index: -1;
 
-  border: 4px solid black;
+  /* border: 4px solid black; */
 
   width: 100%;
   height: 100vh;
@@ -92,7 +92,7 @@ svg:hover {
 }
 
 #benefits-grid {
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
 
   display: flex;
   flex-direction: column;
@@ -105,7 +105,7 @@ svg:hover {
 }
 
 .benefits-row {
-  border: 3px solid green;
+  /* border: 3px solid green; */
 
   width: 100%;
 
@@ -116,7 +116,7 @@ svg:hover {
 }
 
 .benefit-images {
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
 
   display: flex;
   flex-direction: column;
@@ -136,7 +136,7 @@ svg:hover {
 }
 
 /***************************************************
-                      SECTION 4 
+                      SECTION 3
 ****************************************************/
 
 #left-green-section {
@@ -150,6 +150,8 @@ svg:hover {
   justify-content: flex-end;
 
   background-color: rgb(203, 227, 170);
+
+  z-index: -1;
 }
 
 /* TODO MARCOS HELP POSITION */
@@ -165,12 +167,15 @@ svg:hover {
   margin-right: 50px;
 
   width: 65%;
-  /* height: 50%; */
+  
+  z-index: 1;
+  
 }
 
 #number-6 {
   /* border: 3px solid black; */
-
+  z-index: -1;
+  
   position: absolute;
 
   /* attempt */
@@ -223,13 +228,79 @@ svg:hover {
 
 .spoon-background {
   /* border: coral 1px solid; */
-  
+
   height: 100%;
   width: 50%;
-  
+
   background-image: url("../img/spoon.png");
   background-size: cover;
-  background-position: 70% 60%; 
+  background-position: 70% 60%;
+}
+
+/***************************************************
+                      SECTION 4
+****************************************************/
+
+.section-4 {
+
+  /* To position footer */
+  position: relative;
+
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: flex-start; */
+  
+  border: 3px solid violet;
+
+  background-image: url("../img/image2.png");
+  background-size: cover;
+  background-position: right bottom;
+}
+
+.learn-more {
+  background-color: white;
+  border: 3px solid blue;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 640px;
+  height: 450px;
+
+  color: black;
+}
+
+.learn-more h1 {
+  color: rgb(16, 78, 47);
+
+  font-size: 3.3em;
+
+  margin-bottom: 10px;
+}
+
+.learn-more p {
+  color: rgb(47, 98, 71);
+
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}
+
+#learn-more-input {
+  height: 60px;
+
+  background-color: rgb(203, 227, 170);
+  border-left: 16px solid rgb(16, 78, 47);
+
+  /* transition: border-color .5s ease-out; */
+}
+
+input::placeholder {
+  color: white;
+
+  line-height: normal;
+
+  font-size: 3.2em;
 }
 
 /***************************************************
@@ -237,52 +308,23 @@ svg:hover {
 ****************************************************/
 
 .footer {
-  display: flex;
 
-  flex-direction: column;
+  background-color: rgb(16,78,47);
+  border: 2px solid black;
 
-  background-image: url("../img/image2.png");
-  opacity: 0.8;
-  background-size: cover;
-  background-position: right;
+  position: absolute;
+  bottom: 0;
 
-  /* dots fix for background images */
-  position: relative;
-  z-index: -1;
-}
-
-.footer-content {
-  background-color: white;
-
-  display: flex;
-
-  text-align: center;
-  width: 60%;
-  height: 30%;
-
-  padding: 15px;
-
-  opacity: 0.7;
-
-  font-weight: bold;
-  color: black;
-}
-
-.footer-links {
-  margin-left: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.black-foot {
-  background-color: burlywood;
   width: 100%;
+  height: 400px;
+
+  display: flex;
+  justify-content: flex-start;
+
+
+
 }
 
-.black-foot ul {
-  list-style-type: none;
-  line-height: 30px;
-}
 
 /***************************************************
                       HOVER EFFECTS
