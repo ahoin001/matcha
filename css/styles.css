@@ -8,6 +8,8 @@ body {
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(3rem);
   scroll-snap-type: y mandatory;
+
+  position: relative;
 }
 
 svg {
@@ -17,6 +19,36 @@ svg {
 svg:hover {
   fill: red;
 }
+
+/* #nav-dots {
+
+  background-color: cornsilk;
+
+  position: fixed;
+  top: 70%;
+  left: 6%;
+  z-index: 1;
+
+  width: 36px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.dot {
+
+  background-color: #bbb;
+
+  height: 25px;
+  width: 25px;
+
+  margin: 5px 0;
+
+  border-radius: 50%;
+  
+
+} */
 
 /***************************************************
                       SECTION 1
@@ -241,6 +273,8 @@ svg:hover {
 .section-4 {
   border: 3px solid violet;
 
+  background-color: rgb(250,250,250);
+
   scroll-snap-align: start;
 
   position: relative;
@@ -255,22 +289,22 @@ svg:hover {
 
   display: flex;
 
-  background-image: url("../img/image2.png");
-  background-size: cover;
-  background-position: right bottom;
+  background-image: url("../img/powder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% ;
+  
 }
 
 .learn-more {
-  background-color: white;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 15%;
+  left: 9%;
 
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: flex-start;
 
   width: 640px;
@@ -290,8 +324,10 @@ svg:hover {
 .learn-more p {
   color: rgb(47, 98, 71);
 
+  line-height: 1.6em;
   font-size: 1.6em;
-  margin-bottom: 40px;
+
+  margin-bottom: 55px;
 }
 
 #learn-more-input {
@@ -307,8 +343,9 @@ input::placeholder {
 
   /* line-height: normal; */
 
-  line-height: 30px;
-  font-size: 3.2em;
+  
+  /* line-height: 30px; */
+  font-size: 3.5em;
 }
 
 /***************************************************
@@ -323,7 +360,7 @@ input::placeholder {
   bottom: 0;
 
   width: 100%;
-  height: 400px;
+  height: 380px;
 
   color: white;
 
@@ -339,7 +376,6 @@ input::placeholder {
 
 .footer-links ul {
   border: 1px solid blue;
-  
 }
 
 #list-div {
@@ -348,12 +384,10 @@ input::placeholder {
 }
 
 #contact {
-
   border: 1px solid blue;
 
   margin-right: 195px;
   margin-left: 495px;
-
 }
 
 /***************************************************
