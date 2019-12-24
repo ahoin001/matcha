@@ -1,7 +1,24 @@
-* {
-  font-family: "Roboto", sans-serif; }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  /* All elements will inherit box sizing from html selector below */
+  box-sizing: inherit; }
+
+html {
+  /* 
+        If we want our sizes to be based off 10px, and want user to be able to adjust the font in browser settings
+        we do the size we want (10px) divided by browser default of 16(in this case), which is 62.5% (10/16) {
+
+        Now if user changes browser font size, our sizes can react from the new browser font size wherever we use rem
+        Since rem will reflect 
+    */
+  font-size: 62.5%; }
 
 body {
+  box-sizing: border-box;
   /* Set Up For Snap Scroll */
   max-height: 100vh;
   scroll-snap-type: mandatory;
@@ -34,33 +51,26 @@ svg:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* border: 1px solid red; */
-  width: 77%;
-  height: 100%; }
+  width: 70%; }
 
 .content-1-text {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   color: darkslategray;
-  /* margin-bottom: 170px; */
   width: 50%; }
 
 .content-1-text h1 {
-  font-size: 3.7em;
+  font-size: 5.2rem;
   /* Customize what weights we have access too in google fonts link */
   font-weight: 400;
-  margin-bottom: 20px; }
+  margin-bottom: 2.5rem; }
 
 .content-1-text p {
-  /* border: 1px solid red; */
-  margin-top: 7%;
-  width: 85%;
-  line-height: 40px;
-  font-size: 1.6em;
-  font-weight: 300; }
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 4.4rem; }
 
 /***************************************************
                         SECTION 2 GRID
@@ -69,7 +79,6 @@ svg:hover {
   background-color: #cbe3aa; }
 
 #benefits-grid {
-  /* border: 5px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,33 +87,31 @@ svg:hover {
   height: 80%; }
 
 .benefits-row {
-  /* border: 3px solid green; */
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   color: white; }
 
 .benefit-images {
-  /* border: 1px solid brown; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 280px; }
+  width: 30rem; }
 
 .benefit-texts {
+  font-size: 3.4rem;
   text-align: center;
-  margin: 28px 0; }
+  margin: 3rem 0; }
 
 .grid-image {
-  width: 190px;
-  height: 190px; }
+  width: 20rem;
+  height: 20rem; }
 
 /***************************************************
                         SECTION 3
   ****************************************************/
 #left-green-section {
-  /* border: 3px solid purple; */
-  width: 71%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -113,50 +120,42 @@ svg:hover {
   z-index: -1; }
 
 #matcha-6-div {
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   /* To position the 6 in background */
   position: relative;
-  margin-right: 50px;
+  margin-right: 7rem;
   width: 65%;
   z-index: 1; }
 
 #number-6 {
-  /* border: 3px solid black; */
   z-index: -1;
   position: absolute;
-  /* attempt */
-  /* top: 0;
-    left: 0; */
-  /* bootleg fix? */
-  right: 380px;
-  bottom: 35px;
+  left: 0px;
+  bottom: 4rem;
   opacity: 0.1;
-  width: 300px;
-  font-size: 25em;
-  /* font-size: 420px; */ }
+  font-size: 45rem; }
 
 #matcha-6-header {
-  font-size: 5em;
+  font-size: 7.6rem;
   color: white;
-  margin-bottom: 24px; }
+  margin-bottom: 2rem; }
 
 #matcha-6-text {
-  font-size: 1.2em;
-  line-height: 1.8em;
+  font-size: 2.2rem;
+  line-height: 4rem;
   color: darkslategray;
-  margin-bottom: 54px; }
+  margin-bottom: 4rem; }
 
 #learn-more-button {
-  width: 180px;
-  border-radius: 25px;
+  width: 20rem;
+  border-radius: 10rem;
   text-align: center;
-  font-size: 22px;
+  font-size: 2.2rem;
   background-color: #114f2f;
   color: #ffffff;
   text-decoration: none;
-  padding: 18px 22px;
+  padding: 2rem 2rem;
   margin-bottom: 50px; }
 
 .spoon-background {
@@ -171,86 +170,77 @@ svg:hover {
                         SECTION 4
   ****************************************************/
 .section-4 {
-  border: 3px solid violet;
-  background-color: #fafafa;
-  scroll-snap-align: start;
-  position: relative;
-  /* border: 4px solid black; */
+  border: 4px solid black;
   width: 100%;
   height: 100vh;
+  background-color: #fafafa;
+  scroll-snap-align: start;
   /* To position footer */
-  position: relative;
   display: flex;
+  align-items: center;
   background-image: url("../img/powder.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100%; }
 
 .learn-more {
-  /* border: 3px solid blue; */
-  position: absolute;
-  top: 15%;
-  left: 9%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 640px;
-  height: 450px;
-  color: black; }
-
-.learn-more h1 {
-  color: #104e2f;
-  font-size: 3.3em;
-  margin-bottom: 10px; }
+  width: 60rem;
+  height: 50rem; }
+  .learn-more h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem; }
 
 .learn-more p {
   color: #2f6247;
-  line-height: 1.6em;
-  font-size: 1.6em;
+  font-size: 3.5rem;
+  line-height: 4.6rem;
   margin-bottom: 55px; }
 
 #learn-more-input {
-  height: 60px;
-  width: 100%;
+  border-left: 16px solid #104e2f;
   background-color: #cbe3aa;
-  border-left: 16px solid #104e2f; }
+  color: white;
+  font-size: 3.6rem;
+  height: 6rem;
+  width: 100%;
+  vertical-align: middle; }
 
 input::placeholder {
-  color: white;
-  /* line-height: normal; */
-  /* line-height: 30px; */
-  font-size: 3.5em; }
+  text-align: center;
+  line-height: 10rem;
+  font-size: 3.5rem; }
 
 /***************************************************
                         FOOTER
   ****************************************************/
 .footer {
+  border: 2px solid yellow;
   background-color: #104e2f;
-  border: 2px solid black;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 380px;
+  height: 40rem;
   color: white;
   display: flex;
-  /* justify-content: center; */
+  justify-content: space-around;
   align-items: center; }
 
+#list-div {
+  border: 1px solid purple; }
+
 .footer-food-list li {
-  padding: 5px;
+  padding: .7rem;
+  font-size: 1.6rem;
   list-style-type: none; }
 
 .footer-links ul {
-  border: 1px solid blue; }
-
-#list-div {
-  border: 1px solid blue;
-  margin-left: 125px; }
+  border: 1px solid red; }
 
 #contact {
-  border: 1px solid blue;
-  margin-right: 195px;
-  margin-left: 495px; }
+  border: 1px solid blue; }
 
 /***************************************************
                         HOVER EFFECTS
