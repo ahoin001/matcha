@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d0cbde91ce.js" crossorigin="anonymous"></script>
 
     <!-- CSS For My Changes -->
     <link rel="stylesheet" href="css/styles.css">
@@ -64,11 +64,11 @@
     <!-- Section 1 -->
     <div id="#anchor1" class="section">
 
-        <div class="content-1">
+        <div class="about-flex">
 
             <img src="img/image1.jpg" width="700" height="700">
 
-            <div class="content-1-text">
+            <div class="about">
 
                 <h1>A CUP OF MATCHA ?</h1>
 
@@ -92,54 +92,54 @@
 
     <div id="#anchor2" class="section benefits" data-aos="fade">
 
-        <div id="benefits-grid">
+        <div class="benefits-grid">
 
-            <div class="benefits-row">
+            <div class="benefits-grid__row">
 
-                <div class="benefit-images ">
+                <div class="benefits-grid__images ">
 
-                    <img src="img/growth.svg" class="grid-image">
-                    <h1 class="benefit-texts">RICH IN FIBER</h1>
-
-                </div>
-
-                <div class="benefit-images">
-
-                    <img src="img/muscle.svg" class="grid-image">
-                    <h1 class="benefit-texts">STRENGTHENS</h1>
+                    <img src="img/growth.svg" class="benefits-grid__image">
+                    <h1 class="benefits-grid__texts">RICH IN FIBER</h1>
 
                 </div>
 
-                <div class="benefit-images">
+                <div class="benefits-grid__images">
 
-                    <img src="img/stomach.svg" class="grid-image">
-                    <h1 class="benefit-texts">AIDS DIGESTION</h1>
+                    <img src="img/muscle.svg" class="benefits-grid__image">
+                    <h1 class="benefits-grid__texts">STRENGTHENS</h1>
+
+                </div>
+
+                <div class="benefits-grid__images">
+
+                    <img src="img/stomach.svg" class="benefits-grid__image">
+                    <h1 class="benefits-grid__texts">AIDS DIGESTION</h1>
 
                 </div>
 
 
             </div>
 
-            <div class="benefits-row">
+            <div class="benefits-grid__row">
 
-                <div class="benefit-images">
+                <div class="benefits-grid__images">
 
-                    <img src="img/mindset.svg" class="grid-image">
-                    <h1 class="benefit-texts">IMPROVES BRAIN FUNCTION</h1>
-
-                </div>
-
-                <div class="benefit-images">
-
-                    <img src="img/smile.svg" class="grid-image">
-                    <h1 class="benefit-texts">IMPROVES MOOD</h1>
+                    <img src="img/mindset.svg" class="benefits-grid__image">
+                    <h1 class="benefits-grid__texts">IMPROVES BRAIN FUNCTION</h1>
 
                 </div>
 
-                <div class="benefit-images">
+                <div class="benefits-grid__images">
 
-                    <img src="img/sea.svg" class="grid-image">
-                    <h1 class="benefit-texts">DETOXIFIES</h1>
+                    <img src="img/smile.svg" class="benefits-grid__image">
+                    <h1 class="benefits-grid__texts">IMPROVES MOOD</h1>
+
+                </div>
+
+                <div class="benefits-grid__images">
+
+                    <img src="img/sea.svg" class="benefits-grid__image">
+                    <h1 class="benefits-grid__texts">DETOXIFIES</h1>
 
                 </div>
 
@@ -158,11 +158,11 @@
 
             <div id="matcha-6-div">
 
-                <div id="number-6"> 6</div>
+                <div id="matcha-6-div__number-6"> 6</div>
 
-                <h1 id="matcha-6-header">MATCHA</h1>
+                <h1 id="matcha-6-div__header">MATCHA</h1>
 
-                <p id="matcha-6-text"> Matcha or macha is finely ground powder of
+                <p id="matcha-6-div__text"> Matcha or macha is finely ground powder of
                     specially grown and processed green tea
                     leaves. It is special in two aspects of farming
                     and processing: the green tea plants for
@@ -171,16 +171,13 @@
                     veins are removed during processing
                 </p>
 
-                <a id="learn-more-button" href="#anchor1"> LEARN MORE </a>
+                <a id="matcha-6-div__button" href="#anchor1"> LEARN MORE </a>
 
             </div>
 
         </div>
 
-        <!-- spoon-background content-1-text-->
-        <div class=" spoon-background">
-
-
+        <div class="spoon-background">
 
         </div>
 
@@ -189,30 +186,28 @@
     <!-- Section 4 -->
     <div id="#anchor4" class="section-4" data-aos="fade">
 
-        <!-- TODO Not positioning as expected -->
         <div class="learn-more">
 
             <h1>WANT TO LEARN MORE ?</h1>
+
             <p>Subscribe to our weekly email <br>
                 to learn about other <br>
                 super foods
             </p>
 
-            
-            <input id="learn-more-input" type="email">
-
+            <input class="learn-more__input" type="email">
 
         </div>
 
         <div class="footer">
 
             <div></div>
-
+       
             <div id="list-div">
 
-                <h1 id="list-header">OTHER SUPER FOODS</h1>
+                <h1 id="list-div__header">OTHER SUPER FOODS</h1>
 
-                <ul class="footer-food-list">
+                <ul class="food-list">
 
                     <li>Kale</li>
                     <li>Avacado</li>
@@ -229,16 +224,17 @@
 
             </div>
 
-            <div id="contact">
+            <div id="contacts">
 
-                <h1> Contact </h1>
-                <h2> Follow Us </h2>
-                <p>icons</p>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-twitter" style="font-size:24px"></i>
-                <i class="fa fa-twitter" style="font-size:36px"></i>
-                <i class="fa fa-twitter" style="font-size:48px;color:red"></i>
+                <h1> Contact Us </h1>
+                <ul>
 
+                    <li> 954-444-5749</li>
+                    <li> SuperMatcha@gmail.com</li>
+                    <li> 19506 NW BlueBird Rise</li>
+                    
+                </ul>
+ 
             </div>
 
             <div></div>
