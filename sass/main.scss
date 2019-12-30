@@ -1,0 +1,490 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", sans-serif;
+    /* All elements will inherit box sizing from html selector below */
+    box-sizing: border-box;
+}
+
+
+html {
+    /* 
+        If we want our sizes to be based off 10px, and want user to be able to adjust the font in browser settings
+        we do the size we want (10px) divided by browser default of 16(in this case), which is 62.5% (10/16) {
+
+        Now if user changes browser font size, our sizes can react from the new browser font size wherever we use rem
+        Since rem will reflect 
+    */
+    font-size: 62.5%;
+
+}
+
+body {
+
+    box-sizing: border-box;
+
+    /* Set Up For Snap Scroll */
+    max-height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(3rem);
+    scroll-snap-type: y mandatory;
+
+    position: relative;
+}
+
+svg {
+    width: 70px;
+    height: 70px;
+}
+
+svg:hover {
+    fill: red;
+}
+
+.section {
+    /* When anchor link clicked alwyas take user to start of sections */
+    scroll-snap-align: start;
+
+    z-index: -1;
+
+    /* border: 4px solid black; */
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***************************************************
+                        SECTION 1
+  ****************************************************/
+
+
+.about-flex {
+    // border: 1px solid red;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    width: 70%;
+    // height: 100%;
+}
+
+.about {
+    // border: 1px solid blue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    color: darkslategray;
+
+    width: 50%;
+
+    h1 {
+
+        font-size: 5.2rem;
+
+        /* Customize what weights we have access too in google fonts link */
+        font-weight: 400;
+
+        margin-bottom: 2.5rem;
+
+    }
+
+    p {
+
+        // border: 1px solid red;
+
+        font-size: 2.4rem;
+        font-weight: 300;
+        line-height: 4.4rem;
+
+    }
+
+}
+
+/***************************************************
+                        SECTION 2 GRID
+  ****************************************************/
+.benefits {
+    background-color: rgb(203, 227, 170);
+}
+
+.benefits-grid {
+    // border: 5px solid blue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 80%;
+
+    &__row {
+
+        // border: 3px solid green;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: space-evenly;
+
+        color: white;
+
+    }
+
+    &__images {
+
+        // border: 1px solid brown;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 30rem;
+
+    }
+
+    &__image {
+
+        width: 20rem;
+        height: 20rem;
+
+    }
+
+    &__texts {
+
+        font-size: 3.4rem;
+
+        text-align: center;
+        margin: 3rem 0;
+
+    }
+
+}
+
+/***************************************************
+                        SECTION 3
+  ****************************************************/
+
+#left-green-section {
+    // border: 3px solid purple;
+
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-color: rgb(203, 227, 170);
+
+    z-index: -1;
+}
+
+#matcha-6-div {
+    // border: 1px solid blue;
+
+    display: flex;
+    flex-direction: column;
+
+    /* To position the 6 in background */
+    position: relative;
+
+    margin-right: 7rem;
+
+    width: 65%;
+
+    z-index: 1;
+
+    &__number-6 {
+
+        // border: 3px solid black; 
+        z-index: -1;
+
+        position: absolute;
+
+        left: 0px;
+        bottom: 4rem;
+
+        opacity: 0.1;
+
+        font-size: 45rem;
+
+        // width: 300px;
+
+    }
+
+    &__header {
+
+        font-size: 7.6rem;
+
+        color: white;
+
+        margin-bottom: 2rem;
+
+    }
+
+    &__text {
+
+        font-size: 2.2rem;
+        line-height: 4rem;
+
+        color: darkslategray;
+
+        margin-bottom: 4rem;
+
+    }
+
+    &__button {
+
+        width: 20rem;
+        border-radius: 10rem;
+
+        text-align: center;
+        font-size: 2.2rem;
+
+        background-color: rgb(17, 79, 47);
+        color: #ffffff;
+        text-decoration: none;
+
+        padding: 2rem 2rem;
+        margin-bottom: 50px;
+
+    }
+
+}
+
+.spoon-background {
+    /* border: coral 1px solid; */
+
+    height: 100%;
+    width: 50%;
+
+    background-image: url("../img/spoon.png");
+    background-size: cover;
+    background-position: 70% 60%;
+}
+
+/***************************************************
+                        SECTION 4
+  ****************************************************/
+
+.section-4 {
+
+    // border: 4px solid black;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(250, 250, 250);
+
+    scroll-snap-align: start;
+
+    /* To position footer */
+    position: relative;
+
+    // display: flex;
+    // align-items: flex-start;
+
+    background-image: url("../img/powder.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+}
+
+.learn-more {
+    // border: 3px solid blue; 
+
+    position: absolute;
+    top: 15%;
+    left: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 60rem;
+    height: 50rem;
+
+    h1 {
+        color: rgb(16, 78, 47);
+
+        font-size: 5rem;
+
+        margin-bottom: 3rem;
+    }
+
+    p {
+        // border: 3px solid green; 
+
+        color: rgb(47, 98, 71);
+
+        font-size: 3.5rem;
+        line-height: 4.6rem;
+
+        margin-bottom: 55px;
+    }
+
+    &__input {
+
+        border-left: 16px solid rgb(16, 78, 47);
+        background-color: rgb(203, 227, 170);
+
+        color: white;
+        font-size: 3.6rem;
+
+        height: 6rem;
+        width: 100%;
+
+        vertical-align: middle;
+
+    }
+
+    &__email-button {
+        border-radius: 2.5rem;
+  
+        font-size: 2.2rem;
+      
+        background-color: rgb(17, 79, 47);
+        color: #ffffff;
+        text-decoration: none;
+        
+        padding: 1.8rem 3.2rem;
+        margin-top: 3rem;
+    }
+
+}
+
+input::placeholder {
+    text-align: center;
+    line-height: 10rem;
+    font-size: 3.5rem;
+}
+
+/***************************************************
+                        FOOTER
+  ****************************************************/
+
+.footer {
+    // border: 2px solid yellow;
+    background-color: rgb(16, 78, 47);
+
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 40rem;
+
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#list-div {
+    // border: 1px solid purple;
+    // margin-left: 20rem;
+
+    &__header {}
+
+}
+
+.food-list {
+
+    li {
+        // border: 2px solid red;
+        padding: .7rem;
+
+        font-size: 1.6rem;
+
+        list-style-type: none;
+    }
+
+}
+
+#contacts {
+    // border: 1px solid blue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    h1 {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 3rem;
+
+        li {
+            padding: .7rem;
+
+            font-size: 1.6rem;
+
+            list-style-type: none;
+        }
+    }
+
+
+}
+
+/***************************************************
+                        HOVER EFFECTS
+    ****************************************************/
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hvr-icon-spin {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-icon-spin .hvr-icon {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.hvr-icon-spin:hover .hvr-icon,
+.hvr-icon-spin:focus .hvr-icon,
+.hvr-icon-spin:active .hvr-icon {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}

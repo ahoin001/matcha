@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", sans-serif;
+    /* All elements will inherit box sizing from html selector below */
+    box-sizing: inherit;
+}
+
+
+html {
+    /* 
+        If we want our sizes to be based off 10px, and want user to be able to adjust the font in browser settings
+        we do the size we want (10px) divided by browser default of 16(in this case), which is 62.5% (10/16) {
+
+        Now if user changes browser font size, our sizes can react from the new browser font size wherever we use rem
+        Since rem will reflect 
+    */
+    font-size: 62.5%;
+
+}
+
+body {
+
+    box-sizing: border-box;
+
+    /* Set Up For Snap Scroll */
+    max-height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(3rem);
+    scroll-snap-type: y mandatory;
+
+    position: relative;
+}
