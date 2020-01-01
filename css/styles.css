@@ -26,6 +26,58 @@ body {
   scroll-snap-type: y mandatory;
   position: relative; }
 
+/**********************************************************
+                        COLORS
+**********************************************************/
+/*****************************
+   NAV CSS *
+****************************/
+.navbar-container {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  /* opacity: 0.6; */
+  height: 20rem;
+  width: 100%; }
+
+.navbar {
+  padding: 2.4rem 1rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  /* color: chartreuse; */ }
+  .navbar__logo-text {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 3rem;
+    color: green; }
+  .navbar__nav-links {
+    list-style: none;
+    display: flex;
+    font-weight: lighter;
+    color: green; }
+    .navbar__nav-links .nav-item a {
+      display: inline-block;
+      margin-left: 38px;
+      padding: 10px 15px;
+      font-size: 1.5em;
+      text-decoration: none;
+      color: green; }
+
+#nav-button {
+  border-radius: 2.5rem;
+  font-size: 2.2rem;
+  background-color: #114f2f;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1.88rem 3.2rem;
+  margin-left: 17rem; }
+
+.logo img {
+  width: 17.5rem;
+  vertical-align: middle; }
+
 svg {
   width: 70px;
   height: 70px; }
@@ -181,16 +233,16 @@ svg:hover {
   width: 60rem;
   height: 50rem; }
   .learn-more h1 {
-    color: #104e2f;
+    color: #114f2f;
     font-size: 5rem;
     margin-bottom: 3rem; }
   .learn-more p {
     color: #2f6247;
     font-size: 3.5rem;
     line-height: 4.6rem;
-    margin-bottom: 55px; }
+    margin-bottom: 5.5rem; }
   .learn-more__input {
-    border-left: 16px solid #104e2f;
+    border-left: 1.6rem solid #114f2f;
     background-color: #cbe3aa;
     color: white;
     font-size: 3.6rem;
@@ -215,7 +267,7 @@ input::placeholder {
                         FOOTER
   ****************************************************/
 .footer {
-  background-color: #104e2f;
+  background-color: #114f2f;
   position: absolute;
   bottom: 0;
   width: 100%;

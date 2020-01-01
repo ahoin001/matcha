@@ -1,39 +1,7 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
+@import 'base/base';
+@import 'abstract/variables';
+@import 'components/nav';
 
-    font-family: "Roboto", sans-serif;
-    /* All elements will inherit box sizing from html selector below */
-    box-sizing: border-box;
-}
-
-
-html {
-    /* 
-        If we want our sizes to be based off 10px, and want user to be able to adjust the font in browser settings
-        we do the size we want (10px) divided by browser default of 16(in this case), which is 62.5% (10/16) {
-
-        Now if user changes browser font size, our sizes can react from the new browser font size wherever we use rem
-        Since rem will reflect 
-    */
-    font-size: 62.5%;
-
-}
-
-body {
-
-    box-sizing: border-box;
-
-    /* Set Up For Snap Scroll */
-    max-height: 100vh;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(3rem);
-    scroll-snap-type: y mandatory;
-
-    position: relative;
-}
 
 svg {
     width: 70px;
@@ -85,7 +53,7 @@ svg:hover {
     align-items: center;
 
     text-align: center;
-    color: darkslategray;
+    color: $color-normal-section-text;
 
     width: 50%;
 
@@ -187,7 +155,7 @@ svg:hover {
     align-items: center;
     justify-content: flex-end;
 
-    background-color: rgb(203, 227, 170);
+    background-color: $color-light-green-background;
 
     z-index: -1;
 }
@@ -240,7 +208,7 @@ svg:hover {
         font-size: 2.2rem;
         line-height: 4rem;
 
-        color: darkslategray;
+        color: $color-normal-section-text;
 
         margin-bottom: 4rem;
 
@@ -319,7 +287,7 @@ svg:hover {
     height: 50rem;
 
     h1 {
-        color: rgb(16, 78, 47);
+        color: $button-color;
 
         font-size: 5rem;
 
@@ -334,13 +302,13 @@ svg:hover {
         font-size: 3.5rem;
         line-height: 4.6rem;
 
-        margin-bottom: 55px;
+        margin-bottom: 5.5rem;
     }
 
     &__input {
 
-        border-left: 16px solid rgb(16, 78, 47);
-        background-color: rgb(203, 227, 170);
+        border-left: 1.6rem solid $button-color;
+        background-color: $color-light-green-background;
 
         color: white;
         font-size: 3.6rem;
@@ -379,7 +347,7 @@ input::placeholder {
 
 .footer {
     // border: 2px solid yellow;
-    background-color: rgb(16, 78, 47);
+    background-color: $button-color;
 
     position: absolute;
     bottom: 0;
